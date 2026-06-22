@@ -18,10 +18,7 @@ import at.petrak.hexcasting.common.casting.actions.circles.OpImpetusDir;
 import at.petrak.hexcasting.common.casting.actions.circles.OpImpetusPos;
 import at.petrak.hexcasting.common.casting.actions.escaping.*;
 import at.petrak.hexcasting.common.casting.actions.eval.*;
-import at.petrak.hexcasting.common.casting.actions.lists.OpEmptyList;
-import at.petrak.hexcasting.common.casting.actions.lists.OpLastNToList;
-import at.petrak.hexcasting.common.casting.actions.lists.OpSingleton;
-import at.petrak.hexcasting.common.casting.actions.lists.OpSplat;
+import at.petrak.hexcasting.common.casting.actions.lists.*;
 import at.petrak.hexcasting.common.casting.actions.local.OpPeekLocal;
 import at.petrak.hexcasting.common.casting.actions.local.OpPushLocal;
 import at.petrak.hexcasting.common.casting.actions.math.OpCoerceToAxial;
@@ -577,6 +574,8 @@ public class HexActions {
         new OperationAction(HexPattern.fromAngles("ddewedd", HexDir.SOUTH_EAST)));
     public static final ActionRegistryEntry DECONSTRUCT = make("deconstruct",
         new OperationAction(HexPattern.fromAngles("aaqwqaa", HexDir.SOUTH_WEST)));
+    public static final ActionRegistryEntry ZIP = make("zip",
+        new ActionRegistryEntry(HexPattern.fromAngles("wwaadaddww", HexDir.EAST), OpZip.INSTANCE));
 
     // Xplat interops
     static {

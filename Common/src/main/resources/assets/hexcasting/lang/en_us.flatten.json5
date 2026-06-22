@@ -762,6 +762,7 @@
         replace: "Surgeon's Exaltation",
         construct: "Speaker's Distillation",
         deconstruct: "Speaker's Decomposition",
+        zip: "Pairing Distillation",
         
         get_entity: "Entity Purification",
         "get_entity/": {
@@ -1958,6 +1959,7 @@
         splat: "Remove the list at the top of the stack, then push its contents to the stack.",
         construct: "Remove the top iota, then add it as the first element to the list at the top of the stack.",
         deconstruct: "Remove the first iota from the list at the top of the stack, then push that iota to the stack.",
+        zip: "Removes two lists from the top of the stack, then push a list containing pairs of iotas corresponding to the values at that index in each list."
       },
       
       patterns_as_iotas: {
